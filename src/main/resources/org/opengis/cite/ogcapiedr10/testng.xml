@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="ogcapi-edr10-${version}" verbose="0" configfailurepolicy="continue">
-  <parameter name="iut"  value=""/>
-  <parameter name="ics"  value=""/>
-  <parameter name="apiDefinition"  value=""/>
+  <parameter name="iut"  value="http://localhost:8080"/>
+  <parameter name="ics"  value="http://localhost:8080"/>
+  <parameter name="apiDefinition"  value="http://localhost:8080/api"/>
 
   <listeners>
     <listener class-name="org.opengis.cite.ogcapiedr10.TestRunListener" />

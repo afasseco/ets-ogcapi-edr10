@@ -64,7 +64,7 @@ public class Collections extends CommonDataFixture {
      * 
      * @param testPoint the test point to test, never <code>null</code>
      */
-    @Test(description = "Implements Abstract Test 82, meets Requirement /req/collections/rc-md-op", dataProvider = "collectionsUris", dependsOnGroups = "conformance")
+    @Test(description = "Implements Abstract Test 82, meets Requirement /req/collections/rc-md-op", dataProvider = "collectionsUris", dependsOnGroups = {"conformance","apidefinition"})
     public void validateCollectionsMetadataOperation(TestPoint testPoint) {
     	
     	System.out.println("CHKDA2 "+testPoint.getServerUrl()+ " | "+testPoint.getPath());
