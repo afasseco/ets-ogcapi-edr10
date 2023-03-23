@@ -56,11 +56,7 @@ public class UriBuilder {
      * @return this URI, never <code>null</code>
      */
     public String buildUrl() {
-        String url = testPoint.getServerUrl() + testPoint.getPath();
-        if( testPoint.getServerUrl().endsWith("/") && testPoint.getPath().startsWith("/")) {
-            url = testPoint.getServerUrl() + testPoint.getPath().substring(1);
-        }
-        UriTemplate uriTemplate = new UriTemplate( url );
+        UriTemplate uriTemplate = new UriTemplate( testPoint.getServerUrl() + testPoint.getPath() );
         return uriTemplate.createURI( templateReplacements );
     }
 
